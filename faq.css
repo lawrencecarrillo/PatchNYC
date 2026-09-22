@@ -509,15 +509,30 @@
 }
 
 .faq-a {
-  display: none;
-  padding: 0 1.75rem 1.4rem;
+  /* Remove display: none; */
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0 1.75rem; /* Removed bottom padding here to prevent the "jump" */
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400; /* Increased to 400 as requested for better legibility */
   color: var(--white-dim);
   line-height: 1.7;
+  border-top: 1px solid transparent;
+  transition: 
+    max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+    opacity 0.3s ease,
+    padding 0.4s ease,
+    border-color 0.4s ease;
+}
+
+/* New class for the open state */
+.faq-item.open .faq-a {
+  max-height: 600px; /* Large enough to hold the text */
+  opacity: 1;
+  padding: 1.4rem 1.75rem;
   border-top: 1px solid var(--border);
 }
-.faq-item.open .faq-a { display: block; }
 
 /* Active nav link */
 .active-link {

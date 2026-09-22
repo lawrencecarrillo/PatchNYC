@@ -380,15 +380,24 @@
     // FAQ accordion
     document.querySelectorAll('.faq-q').forEach(btn => {
       btn.addEventListener('click', () => {
-        const item    = btn.parentElement;
-        const isOpen  = btn.getAttribute('aria-expanded') === 'true';
-        document.querySelectorAll('.faq-item').forEach(i => {
-          i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
-          i.classList.remove('open');
+        const currentItem = btn.parentElement;
+        const isOpen = currentItem.classList.contains('open');
+
+        // 1. Close all other items (Accordion effect)
+        document.querySelectorAll('.faq-item').forEach(item => {
+          if (item !== currentItem) {
+            item.classList.remove('open');
+            item.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+          }
         });
-        if (!isOpen) {
+
+        // 2. Toggle the current item
+        if (isOpen) {
+          currentItem.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+        } else {
+          currentItem.classList.add('open');
           btn.setAttribute('aria-expanded', 'true');
-          item.classList.add('open');
         }
       });
     });

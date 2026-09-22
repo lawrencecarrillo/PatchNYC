@@ -1,0 +1,9 @@
+POST http://localhost:3000/api/reports
+Content-Type: application/json
+
+{
+  "type": "Pothole",
+  "severity": "high",
+  "location": "Adams St",
+  "borough": "Brooklyn"
+}
