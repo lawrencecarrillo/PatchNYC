@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PatchNYC — Safety, Stats & FAQ</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="faq.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">PATCH<span>NYC</span></a>
+      <div class="nav-links">
+        <a href="index.html#report" class="nav-link">Report</a>
+        <a href="index.html#feed" class="nav-link">Feed</a>
+        <a href="faq.html" class="nav-link active-link">Safety & FAQ</a>
+        <a href="index.html#report" class="nav-cta">+ Add Hazard</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <header class="faq-hero">
+    <div class="faq-hero-inner">
+      <div class="hero-eyebrow">Know the road</div>
+      <h1 class="faq-title">SAFETY,<br><span>STATS</span> &<br>FAQ</h1>
+      <p class="faq-hero-sub">Everything NYC cyclists need to know — from road hazard data to hand signals, right-of-way rules, and community courtesy.</p>
+    </div>
+    <div class="faq-hero-nav">
+      <a href="#stats" class="faq-nav-pill">NYC stats</a>
+      <a href="#road" class="faq-nav-pill">Road conditions</a>
+      <a href="#signals" class="faq-nav-pill">Hand signals</a>
+      <a href="#safety" class="faq-nav-pill">Safety tips</a>
+      <a href="#courtesy" class="faq-nav-pill">Courtesy</a>
+      <a href="#faq" class="faq-nav-pill">FAQ</a>
+    </div>
+  </header>
+
+  <main class="faq-main">
+
+    <!-- ── STATS ── -->
+    <section class="faq-section" id="stats">
+      <div class="faq-section-label">01 — NYC cycling statistics</div>
+      <h2 class="faq-section-title">The numbers on NYC streets</h2>
+
+      <div class="stat-grid">
+        <div class="big-stat">
+          <div class="big-stat-num">5,148</div>
+          <div class="big-stat-label">Cyclists injured in NYC traffic in 2024</div>
+          <div class="big-stat-source">NYC DOT / NYPD</div>
+        </div>
+        <div class="big-stat accent">
+          <div class="big-stat-num">94%</div>
+          <div class="big-stat-label">Of 2023 cyclist fatalities occurred on streets with no protected bike infrastructure</div>
+          <div class="big-stat-source">Transportation Alternatives</div>
+        </div>
+        <div class="big-stat">
+          <div class="big-stat-num">30+</div>
+          <div class="big-stat-label">Miles of new protected bike lanes added by NYC DOT annually since 2023</div>
+          <div class="big-stat-source">NYC DOT Streets Plan</div>
+        </div>
+        <div class="big-stat">
+          <div class="big-stat-num">32%</div>
+          <div class="big-stat-label">Drop in total traffic fatalities in the first half of 2025 vs. 2024 — a historic low</div>
+          <div class="big-stat-source">NYC DOT Vision Zero, 2025</div>
+        </div>
+        <div class="big-stat">
+          <div class="big-stat-num">1,544</div>
+          <div class="big-stat-label">Cyclist injuries in 2024 caused by driver distraction — the #1 cause</div>
+          <div class="big-stat-source">NYC Open Data</div>
+        </div>
+        <div class="big-stat">
+          <div class="big-stat-num">20%</div>
+          <div class="big-stat-label">Of reported cyclist injuries in some years caused by dooring — a car door opening into a cyclist's path</div>
+          <div class="big-stat-source">NYC Crash Data</div>
+        </div>
+      </div>
+
+      <div class="borough-grid">
+        <div class="borough-card">
+          <div class="borough-name">Brooklyn</div>
+          <div class="borough-stat danger">Highest cyclist deaths (2024)</div>
+          <div class="borough-detail">15.1% of all traffic fatalities were cyclists</div>
+        </div>
+        <div class="borough-card">
+          <div class="borough-name">Manhattan</div>
+          <div class="borough-stat good">50% drop in cyclist fatalities (2024)</div>
+          <div class="borough-detail">1,666 injuries in 2023 · 23% of injured traffic victims</div>
+        </div>
+        <div class="borough-card">
+          <div class="borough-name">Queens</div>
+          <div class="borough-stat">787 injured · 4 killed (2024)</div>
+          <div class="borough-detail">13.3% of Queens traffic fatalities were cyclists</div>
+        </div>
+        <div class="borough-card">
+          <div class="borough-name">The Bronx</div>
+          <div class="borough-stat good">43% decline in total traffic deaths (2025)</div>
+          <div class="borough-detail">451 injured · 4 killed in 2024</div>
+        </div>
+        <div class="borough-card">
+          <div class="borough-name">Staten Island</div>
+          <div class="borough-stat good">Zero cyclist deaths (2024)</div>
+          <div class="borough-detail">70 injuries · 5.3% of traffic injuries involved cyclists</div>
+        </div>
+      </div>
+
+      <div class="callout">
+        <div class="callout-icon">↗</div>
+        <div class="callout-text">Summer is the most dangerous season — <strong>35% of all cyclist deaths</strong> occur in summer months. Evening hours (6pm–midnight) are the riskiest time of day due to low visibility, high traffic volume, and driver fatigue.</div>
+      </div>
+    </section>
+
+    <!-- ── ROAD CONDITIONS ── -->
+    <section class="faq-section" id="road">
+      <div class="faq-section-label">02 — Road conditions</div>
+      <h2 class="faq-section-title">What's out there</h2>
+
+      <div class="hazard-explainer-grid">
+        <div class="hazard-card">
+          <div class="hazard-tag high">High risk</div>
+          <div class="hazard-name">Deep potholes</div>
+          <div class="hazard-desc">Can cause sudden front wheel loss and ejection from the bike. Most dangerous when filled with water and depth is invisible. Common after freeze-thaw cycles in late winter and early spring.</div>
+        </div>
+        <div class="hazard-card">
+          <div class="hazard-tag high">High risk</div>
+          <div class="hazard-name">Raised manhole covers</div>
+          <div class="hazard-desc">Especially dangerous at speed or at an angle. A raised cover can catch a tire and pull the front wheel sideways. NYC has over 300,000 manholes — many sit well above or below grade.</div>
+        </div>
+        <div class="hazard-card">
+          <div class="hazard-tag med">Medium risk</div>
+          <div class="hazard-name">Uneven pavement / tree roots</div>
+          <div class="hazard-desc">Raised edges from tree root expansion create lip hazards that can catch narrow tires. Common in Brooklyn, Queens, and tree-lined avenues in Manhattan.</div>
+        </div>
+        <div class="hazard-card">
+          <div class="hazard-tag med">Medium risk</div>
+          <div class="hazard-name">Wet metal surfaces</div>
+          <div class="hazard-desc">Grates, manhole covers, and painted lane markings become extremely slippery when wet. Brake and turn before you reach them, not on them.</div>
+        </div>
+        <div class="hazard-card">
+          <div class="hazard-tag med">Medium risk</div>
+          <div class="hazard-name">Debris & broken glass</div>
+          <div class="hazard-desc">Broken glass and metal shards are frequent near construction zones. Flat tires from debris are the #1 reason cyclists end up stopped in traffic lanes — a secondary hazard.</div>
+        </div>
+        <div class="hazard-card">
+          <div class="hazard-tag low">Lower risk</div>
+          <div class="hazard-name">Faded / missing lane markings</div>
+          <div class="hazard-desc">Worn bike lane paint can make lanes invisible at night or in rain. Drivers may not know they're sharing space. Report missing signage so DOT can prioritize repainting.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HAND SIGNALS ── -->
+    <section class="faq-section" id="signals">
+      <div class="faq-section-label">03 — Hand signals</div>
+      <h2 class="faq-section-title">Signal before you move</h2>
+      <p class="faq-section-intro">NYC law requires cyclists to signal turns. Signaling is also your clearest tool for preventing dooring, rear-end collisions, and intersection conflicts. Use these every time.</p>
+
+      <div class="signal-grid">
+        <div class="signal-card">
+          <div class="signal-diagram left-turn">
+            <div class="signal-arm">
+              <div class="signal-body"></div>
+              <div class="signal-arm-out left"></div>
+            </div>
+          </div>
+          <div class="signal-name">Left turn</div>
+          <div class="signal-desc">Extend your <strong>left arm straight out</strong>, parallel to the ground. Hold for at least 3 seconds before turning. Make eye contact with drivers behind you when possible.</div>
+        </div>
+
+        <div class="signal-card">
+          <div class="signal-diagram right-turn">
+            <div class="signal-arm">
+              <div class="signal-body"></div>
+              <div class="signal-arm-out right-up"></div>
+            </div>
+          </div>
+          <div class="signal-name">Right turn</div>
+          <div class="signal-desc">Extend your <strong>left arm up at a 90° angle</strong> (elbow bent, hand pointing up). Alternatively, extend your right arm straight out — both are legally accepted in NYC.</div>
+        </div>
+
+        <div class="signal-card">
+          <div class="signal-diagram stop">
+            <div class="signal-arm">
+              <div class="signal-body"></div>
+              <div class="signal-arm-out left-down"></div>
+            </div>
+          </div>
+          <div class="signal-name">Stop / slowing</div>
+          <div class="signal-desc">Extend your <strong>left arm down at a 45° angle</strong>, palm facing back. Use this before any sudden deceleration — especially important on shared paths with cyclists close behind.</div>
+        </div>
+
+        <div class="signal-card">
+          <div class="signal-diagram hazard">
+            <div class="signal-arm">
+              <div class="signal-body"></div>
+              <div class="signal-arm-point down"></div>
+            </div>
+          </div>
+          <div class="signal-name">Hazard ahead</div>
+          <div class="signal-desc">Point <strong>down at the road</strong> toward the hazard — left hand for left-side hazards, right hand for right-side ones. This is informal but universally understood by cyclists and essential on group rides.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SAFETY TIPS ── -->
+    <section class="faq-section" id="safety">
+      <div class="faq-section-label">04 — Safety tips</div>
+      <h2 class="faq-section-title">Ride smarter</h2>
+
+      <div class="tips-grid">
+        <div class="tip-block">
+          <div class="tip-num">01</div>
+          <div class="tip-title">Wear a helmet</div>
+          <div class="tip-body">NYC does not legally require helmets for adult cyclists, but head injuries are the leading cause of cyclist fatalities. A properly fitted helmet reduces fatal head injury risk by up to 65%. If you ride Citibike daily — get your own helmet.</div>
+        </div>
+        <div class="tip-block">
+          <div class="tip-num">02</div>
+          <div class="tip-title">Ride with traffic, not against it</div>
+          <div class="tip-body">Wrong-way riding is illegal in NYC and dramatically increases collision risk. Drivers and pedestrians don't expect cyclists coming from the wrong direction, and reaction time drops to near zero.</div>
+        </div>
+        <div class="tip-block">
+          <div class="tip-num">03</div>
+          <div class="tip-title">Be visible at night</div>
+          <div class="tip-body">NYC law requires a white front light and red rear reflector after dark. Evening hours (6pm–midnight) account for the highest share of cyclist deaths. Add a rear blinker — it's the single most effective visibility upgrade you can make.</div>
+        </div>
+        <div class="tip-block">
+          <div class="tip-num">04</div>
+          <div class="tip-title">The door zone is a lane</div>
+          <div class="tip-body">Stay at least 4 feet from parked cars to avoid being doored. Dooring accounts for up to 20% of reported cyclist injuries in NYC. Watch for occupied vehicles, interior lights, and exhaust — signs a door may open.</div>
+        </div>
+        <div class="tip-block">
+          <div class="tip-num">05</div>
+          <div class="tip-title">Take the lane when you need it</div>
+          <div class="tip-body">When a bike lane is blocked by a delivery truck, construction, or double-parked car, you have the legal right to take the vehicle lane. Signal, check over your shoulder, and merge decisively — hesitation is more dangerous than action.</div>
+        </div>
+        <div class="tip-block">
+          <div class="tip-num">06</div>
+          <div class="tip-title">Watch for turning trucks</div>
+          <div class="tip-body">Large vehicles turning right from the left side of a bike lane are the cause of the most deadly cyclist-vehicle collisions in NYC. Never pass a large vehicle on the right when it could be turning. If you're at a light next to a truck, wait behind it.</div>
+        </div>
+        <div class="tip-block">
+          <div class="tip-num">07</div>
+          <div class="tip-title">Scan intersections before crossing</div>
+          <div class="tip-body">Even on a green light, scan left-right-left before entering an intersection. Distracted driving caused 1,544 cyclist injuries in 2024. A green light means you have the right of way — it doesn't mean every car is stopping.</div>
+        </div>
+        <div class="tip-block">
+          <div class="tip-num">08</div>
+          <div class="tip-title">Report hazards — don't swerve</div>
+          <div class="tip-body">A sudden swerve around a pothole can put you in traffic. Slow down before hazards, not on them. Then report it on PatchNYC or 311 so the next rider isn't caught off guard.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── COURTESY ── -->
+    <section class="faq-section" id="courtesy">
+      <div class="faq-section-label">05 — Common courtesy</div>
+      <h2 class="faq-section-title">Share the road</h2>
+      <p class="faq-section-intro">NYC bike infrastructure is shared with millions of people every day. These aren't laws — they're the unwritten code that keeps everyone moving safely and without conflict.</p>
+
+      <div class="courtesy-list">
+        <div class="courtesy-item">
+          <div class="courtesy-marker">→</div>
+          <div>
+            <div class="courtesy-title">Announce when passing</div>
+            <div class="courtesy-body">Say "on your left" clearly before overtaking another cyclist or pedestrian on a shared path. Don't blow past silently — a startled person can veer directly into your path.</div>
+          </div>
+        </div>
+        <div class="courtesy-item">
+          <div class="courtesy-marker">→</div>
+          <div>
+            <div class="courtesy-title">Don't block the lane stopped at lights</div>
+            <div class="courtesy-body">If you're slower than the other cyclists at a light, position yourself to the right or behind faster riders. Blocking forces faster cyclists into traffic to pass you when the light changes.</div>
+          </div>
+        </div>
+        <div class="courtesy-item">
+          <div class="courtesy-marker">→</div>
+          <div>
+            <div class="courtesy-title">One ear open, always</div>
+            <div class="courtesy-body">Keep at least one earbud out while riding in the city. You need to hear car horns, emergency vehicles, and other cyclists calling out. NYC law prohibits headphones covering both ears while cycling.</div>
+          </div>
+        </div>
+        <div class="courtesy-item">
+          <div class="courtesy-marker">→</div>
+          <div>
+            <div class="courtesy-title">Yield to pedestrians in the crosswalk</div>
+            <div class="courtesy-body">Pedestrians always have the right of way in a crosswalk, even if you have a green light. Slow down before marked crossings at busy intersections — don't rely on pedestrians to jump out of the way.</div>
+          </div>
+        </div>
+        <div class="courtesy-item">
+          <div class="courtesy-marker">→</div>
+          <div>
+            <div class="courtesy-title">Don't ride on the sidewalk</div>
+            <div class="courtesy-body">Sidewalk riding is illegal in NYC for cyclists 14 and older and is one of the most common sources of conflict between cyclists and pedestrians. If there's no bike lane, ride in the street.</div>
+          </div>
+        </div>
+        <div class="courtesy-item">
+          <div class="courtesy-marker">→</div>
+          <div>
+            <div class="courtesy-title">Point out hazards for the rider behind you</div>
+            <div class="courtesy-body">Use the hazard point signal when you spot a pothole, grate, or debris ahead. The rider behind you has less time to react than you did. This is the simplest act of community you can do on a bike.</div>
+          </div>
+        </div>
+        <div class="courtesy-item">
+          <div class="courtesy-marker">→</div>
+          <div>
+            <div class="courtesy-title">Lock up properly and fully</div>
+            <div class="courtesy-body">Lock both your frame and wheel to a fixed structure. An improperly locked bike blocking a ramp, curb cut, or fire hydrant creates accessibility hazards for others. Use designated bike corrals when available.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ── -->
+    <section class="faq-section" id="faq">
+      <div class="faq-section-label">06 — Frequently asked questions</div>
+      <h2 class="faq-section-title">Common questions</h2>
+
+      <div class="faq-list" id="faq-accordion">
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What happens after I report a hazard on PatchNYC?</button>
+          <div class="faq-a">Your report is stored in our database and immediately visible on the public feed. Other cyclists can see and filter it. We also encourage you to file the same report with NYC 311 (online at nyc.gov/311 or call 311) so the city can dispatch a repair crew. PatchNYC and 311 are complementary — we provide community visibility, 311 initiates official repair.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Is it legal to ride a Citibike on the sidewalk?</button>
+          <div class="faq-a">No. NYC law prohibits cyclists aged 14 and older from riding on sidewalks. Citibike's own terms of service also prohibit sidewalk riding. Violations can result in a $100 fine. The only exception is a designated shared path marked for both cyclists and pedestrians.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do I need a helmet to ride in NYC?</button>
+          <div class="faq-a">Helmets are legally required for cyclists under 14, and for commercial cyclists of any age (e.g., delivery workers). For adult non-commercial cyclists, helmets are not legally required — but strongly recommended. Head injuries are the leading cause of cyclist fatalities. If you ride Citibike regularly, invest in your own properly fitted helmet rather than relying on the shared ones at docks.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What do I do if a car doors me or hits me?</button>
+          <div class="faq-a">Move to safety first. Call 911 if anyone is injured. Get the driver's name, license plate, and insurance information. Photograph the scene, your bike, and any injuries. File a police report — even for minor incidents — as this creates an official record. Contact 311 to report the crash location as a recurring hazard. Seek legal advice if you were injured; NYC has strong cyclist protection laws.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can I ride through a red light in NYC?</button>
+          <div class="faq-a">No. Cyclists in NYC are required to obey all traffic signals. Running a red light is illegal and carries a fine. The "Idaho Stop" (treating a red as a stop sign) is not legal in New York State as of 2026. Always come to a full stop at red lights and proceed only when the light is green and the way is clear.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How do I report a pothole to the city directly?</button>
+          <div class="faq-a">Call 311 or visit nyc.gov/311 and select "Pothole." You can include a photo and the exact address. The city's target response time for pothole repairs is 30 days on local streets. Reporting on PatchNYC as well creates community visibility and helps cyclists avoid the spot in the meantime.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What is Vision Zero?</button>
+          <div class="faq-a">Vision Zero is NYC's commitment to eliminating all traffic deaths and serious injuries. Launched in 2014, it uses street redesigns, speed cameras, protected bike lanes, and enforcement to reduce road violence. In the first half of 2025, NYC recorded its lowest-ever traffic fatality count — 32% below the same period in 2024. Expanded protected bike lanes in Queens (including Long Island City and Jackson Avenue) are a direct result of Vision Zero investment.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Are e-bikes legal on NYC bike lanes?</button>
+          <div class="faq-a">Class 1 and Class 2 e-bikes (pedal-assist up to 20 mph) are legal on NYC bike lanes. Class 3 e-bikes (throttle-powered up to 28 mph) are not permitted on bike lanes. Citi Bike's e-bikes were recapped at 15 mph in 2024 following a series of fatal crashes. Throttle-only e-bikes without pedal-assist are treated as mopeds and require registration.</div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">PATCH<span>NYC</span></div>
+      <div class="footer-text">Built by Lawrence Carrillo · Pursuit AI Native Fellowship · 2026</div>
+    </div>
+  </footer>
+
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item    = btn.parentElement;
+        const isOpen  = btn.getAttribute('aria-expanded') === 'true';
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+          i.classList.remove('open');
+        });
+        if (!isOpen) {
+          btn.setAttribute('aria-expanded', 'true');
+          item.classList.add('open');
+        }
+      });
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.06 });
+    document.querySelectorAll('.faq-section').forEach(s => observer.observe(s));
+  </script>
+</body>
+</html>
